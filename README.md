@@ -1,4 +1,4 @@
-# datawear APP - Mi Band Data Visualizer
+# DataWearAPP - Mi Band Data Visualizer
 
 An Android application designed to visualize Mi Band fitness data sourced from the Gadgetbridge database. The app provides an intuitive interface to view heart rate patterns through interactive charts and tables, built with modern Android development tools.
 

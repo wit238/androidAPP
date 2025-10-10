@@ -3,7 +3,7 @@ package com.example.mynewapp.data
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "mi_band_activity")
+@Entity(tableName = "MI_BAND_ACTIVITY_SAMPLE")
 data class MiBandActivity(
     @PrimaryKey val timestamp: Long,
     val deviceId: Int,

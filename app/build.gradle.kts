@@ -11,12 +11,21 @@ android {
 
     defaultConfig {
         applicationId = "com.example.mynewapp"
-        minSdk = 34
+        minSdk = 30
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        create("release") {
+            storeFile = file(properties["MYAPP_RELEASE_STORE_FILE"].toString())
+            storePassword = properties["MYAPP_RELEASE_STORE_PASSWORD"].toString()
+            keyAlias = properties["MYAPP_RELEASE_KEY_ALIAS"].toString()
+            keyPassword = properties["MYAPP_RELEASE_KEY_PASSWORD"].toString()
+        }
     }
 
     buildTypes {
@@ -26,6 +35,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {

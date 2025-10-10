@@ -1,75 +1,79 @@
-# MyNewApp - Mi Band Data Visualizer
+# DataWearAPP - ตัวแสดงข้อมูล Mi Band
 
-An Android application designed to visualize Mi Band fitness data sourced from the Gadgetbridge database. The app provides an intuitive interface to view heart rate patterns through interactive charts and tables, built with modern Android development tools.
+แอปพลิเคชัน Android ที่ออกแบบมาเพื่อแสดงข้อมูลการออกกำลังกายของ Mi Band ที่มาจากฐานข้อมูล Gadgetbridge แอปนี้มีอินเทอร์เฟซที่ใช้งานง่ายเพื่อดูรูปแบบอัตราการเต้นของหัวใจผ่านแผนภูมิและตารางแบบโต้ตอบ สร้างขึ้นด้วยเครื่องมือพัฒนา Android ที่ทันสมัย
 
-## ✨ Features
+## ✨ เกี่ยวกับโปรเจกต์
 
-- **Database Visualization**: Reads and displays device information from the Gadgetbridge database.
-- **Interactive Heart Rate Chart**: Visualizes heart rate data over time using a zoomable and scrollable line chart.
-- **CSV Data Import**: Parses and displays activity data from a sample `MI_BAND_ACTIVITY_SAMPLE.csv`.
-- **Data Export**: Allows exporting table data into multiple formats, including **CSV**, **XLS**, and **TXT**.
-- **Modern UI**: Built entirely with Jetpack Compose for a clean, reactive, and modern user interface.
-- **Info & Credits**: A dedicated screen acknowledging the data sources and libraries used.
+โปรเจกต์นี้เป็นส่วนหนึ่งของการศึกษาและพัฒนาแอปพลิเคชันบนระบบปฏิบัติการ Android โดยมีวัตถุประสงค์เพื่อเรียนรู้การดึงข้อมูลจากฐานข้อมูล SQLite, การแสดงผลข้อมูลด้วยกราฟและตาราง, และการสร้าง UI ที่สวยงามด้วย Jetpack Compose ครับ ผมหวังว่าโปรเจกต์นี้จะเป็นประโยชน์สำหรับผู้ที่สนใจพัฒนาแอปพลิเคชัน Android ต่อไป
 
-## 🛠️ Tech Stack & Libraries
+## ⭐ ฟีเจอร์เด่น
 
-- **Kotlin**: Primary programming language.
-- **Jetpack Compose**: For building the entire user interface.
-- **MPAndroidChart**: For creating beautiful and interactive charts.
-- **Room Persistence Library**: For database access (schema definition).
-- **Material 3**: For UI components and theming.
-- **Gradle**: For build automation.
+- **การแสดงผลฐานข้อมูล**: อ่านและแสดงข้อมูลอุปกรณ์จากฐานข้อมูล Gadgetbridge
+- **แผนภูมิอัตราการเต้นของหัวใจแบบโต้ตอบ**: แสดงข้อมูลอัตราการเต้นของหัวใจเมื่อเวลาผ่านไปโดยใช้แผนภูมิเส้นที่สามารถซูมและเลื่อนได้
+- **การนำเข้าข้อมูล CSV**: แยกและแสดงข้อมูลกิจกรรมจากไฟล์ตัวอย่าง `MI_BAND_ACTIVITY_SAMPLE.csv`
+- **การส่งออกข้อมูล**: อนุญาตให้ส่งออกข้อมูลตารางในหลายรูปแบบ รวมถึง **CSV**, **XLS** และ **TXT**
+- **UI ที่ทันสมัย**: สร้างขึ้นทั้งหมดด้วย Jetpack Compose เพื่ออินเทอร์เฟซผู้ใช้ที่สะอาด ตอบสนอง และทันสมัย
+- **ข้อมูลและเครดิต**: หน้าจอเฉพาะสำหรับแสดงที่มาของข้อมูลและไลบรารีที่ใช้
 
-## 🚀 Getting Started
+## 🛠️ เทคโนโลยีและไลบรารีที่ใช้
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+- **Kotlin**: ภาษาโปรแกรมหลัก
+- **Jetpack Compose**: สำหรับการสร้างอินเทอร์เฟซผู้ใช้ทั้งหมด
+- **MPAndroidChart**: สำหรับการสร้างแผนภูมิที่สวยงามและโต้ตอบได้
+- **Room Persistence Library**: สำหรับการเข้าถึงฐานข้อมูล (การกำหนดสคีมา)
+- **Material 3**: สำหรับส่วนประกอบ UI และธีม
+- **Gradle**: สำหรับการสร้างอัตโนมัติ
 
-### Prerequisites
+## 🚀 การเริ่มต้นใช้งาน
 
-- [Android Studio](https://developer.android.com/studio) (latest stable version recommended)
+ทำตามคำแนะนำเหล่านี้เพื่อคัดลอกโปรเจกต์และรันบนเครื่องของคุณเพื่อการพัฒนาและทดสอบ
+
+### ข้อกำหนดเบื้องต้น
+
+- [Android Studio](https://developer.android.com/studio) (แนะนำเวอร์ชันเสถียรล่าสุด)
 - Android SDK
 
-### Installation
+### การติดตั้ง
 
-1.  **Clone the repository:**
+1.  **โคลน Repository:**
     ```sh
     git clone https://github.com/wit238/androidAPP.git
     ```
-2.  **Open in Android Studio:**
-    - Open Android Studio.
-    - Select `File > Open` and navigate to the cloned repository directory.
-    - Let Android Studio sync the project with Gradle.
+2.  **เปิดใน Android Studio:**
+    - เปิด Android Studio
+    - เลือก `File > Open` และไปที่ไดเรกทอรีของ Repository ที่โคลนมา
+    - ให้ Android Studio ซิงค์โปรเจกต์กับ Gradle
 
-3.  **Run the application:**
-    - Select an emulator or connect a physical device.
-    - Click the `Run 'app'` button (▶️) in the toolbar.
+3.  **รันแอปพลิเคชัน:**
+    - เลือก Emulator หรือเชื่อมต่ออุปกรณ์จริง
+    - คลิกปutton `Run 'app'` (▶️) ในแถบเครื่องมือ
 
-## 📊 Data Source
+## 📊 แหล่งข้อมูล
 
-The application is designed to work with a `Gadgetbridge.db` file.
+แอปพลิเคชันถูกออกแบบมาเพื่อทำงานกับไฟล์ `Gadgetbridge.db`
 
-- A sample database is included in `app/src/main/assets/Gadgetbridge.db`.
-- A sample CSV file is also included in `app/src/main/assets/MI_BAND_ACTIVITY_SAMPLE.csv` for demonstration purposes.
+- มีฐานข้อมูลตัวอย่างรวมอยู่ใน `app/src/main/assets/Gadgetbridge.db`
+- นอกจากนี้ยังมีไฟล์ CSV ตัวอย่างรวมอยู่ใน `app/src/main/assets/MI_BAND_ACTIVITY_SAMPLE.csv` เพื่อการสาธิต
 
-## 📦 Building the APK
+## 📦 การสร้าง APK
 
-You can build a release APK directly from the command line using the Gradle wrapper.
+คุณสามารถสร้าง APK สำหรับ Release ได้โดยตรงจากบรรทัดคำสั่งโดยใช้ Gradle wrapper
 
-1.  Navigate to the root of the project directory.
-2.  Run the following command:
+1.  ไปที่ไดเรกทอรีรากของโปรเจกต์
+2.  รันคำสั่งต่อไปนี้:
 
-    - On Windows:
+    - บน Windows:
       ```sh
       gradlew.bat assembleRelease
       ```
-    - On macOS/Linux:
+    - บน macOS/Linux:
       ```sh
       ./gradlew assembleRelease
       ```
 
-3.  The unsigned APK will be located in `app/build/outputs/apk/release/`.
+3.  APK ที่ยังไม่ได้ลงนามจะอยู่ใน `app/build/outputs/apk/release/`
 
-## 🙏 Acknowledgements
+## 🙏 ขอบคุณ
 
-- Special thanks to the **Gadgetbridge** team for their open-source project.
-- This project utilizes the powerful **MPAndroidChart** library by PhilJay.
+- ขอขอบคุณทีม **Gadgetbridge** สำหรับโปรเจกต์โอเพนซอร์สของพวกเขา
+- โปรเจกต์นี้ใช้ไลบรารี **MPAndroidChart** ที่ทรงพลังโดย PhilJay

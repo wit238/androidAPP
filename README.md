@@ -1,3 +1,104 @@
+DataWearAPP - Mi Band Data Viewer
+An Android application designed to display Mi Band fitness data sourced from the Gadgetbridge database. This app provides an intuitive interface to view heart rate patterns through interactive charts and tables. Built with modern Android development tools.
+
+✨ About The Project
+
+This project is part of the study and development of an Android application. The objectives are to learn how to retrieve data from an SQLite database, display data using charts and tables, and build a beautiful UI with Jetpack Compose. I hope this project will be beneficial for those interested in future Android application development.
+
+⭐ Key Features
+
+Database Display: Reads and displays device data from the Gadgetbridge database.
+
+Interactive Heart Rate Charts: Displays heart rate data over time using zoomable and scrollable line charts.
+
+CSV Data Import: Parses and displays activity data from the sample MI_BAND_ACTIVITY_SAMPLE.csv file.
+
+Data Export: Allows exporting table data in multiple formats, including CSV, XLS, and TXT.
+
+Modern UI: Built entirely with Jetpack Compose for a clean, responsive, and modern user interface.
+
+Info & Credits: A dedicated screen to display data sources and libraries used.
+
+🛠️ Technologies & Libraries Used
+
+Kotlin: Primary programming language
+
+Jetpack Compose: For building the entire user interface
+
+MPAndroidChart: For creating beautiful and interactive charts
+
+Room Persistence Library: For database access (schema definition)
+
+Material 3: For UI components and theming
+
+Gradle: For build automation
+
+🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
+
+Prerequisites
+
+Android Studio (Latest stable version recommended)
+
+Android SDK
+
+Installation
+
+Clone the repository:
+
+Bash
+
+git clone https://github.com/wit238/androidAPP.git
+Open in Android Studio:
+
+Open Android Studio
+
+Select File > Open and navigate to the cloned repository directory.
+
+Let Android Studio sync the project with Gradle.
+
+Run the application:
+
+Select an Emulator or connect a physical device.
+
+Click the Run 'app' (▶️) button in the toolbar.
+
+📊 Data Sources
+
+The application is designed to work with a Gadgetbridge.db file.
+
+A sample database is included in app/src/main/assets/Gadgetbridge.db.
+
+Additionally, a sample CSV file is included in app/src/main/assets/MI_BAND_ACTIVITY_SAMPLE.csv for demonstration purposes.
+
+📦 Building the APK
+
+You can build a release APK directly from the command line using the Gradle wrapper.
+
+Navigate to the project's root directory.
+
+Run the following command:
+
+On Windows:
+
+Bash
+
+gradlew.bat assembleRelease
+On macOS/Linux:
+
+Bash
+
+./gradlew assembleRelease
+The unsigned APK will be located in app/build/outputs/apk/release/.
+
+🙏 Acknowledgements
+
+Thank you to the Gadgetbridge team for their open-source project.
+
+This project uses the powerful MPAndroidChart library by PhilJay.
+==========================================================================================================================================================================================
+
 # DataWearAPP - ตัวแสดงข้อมูล Mi Band
 
 แอปพลิเคชัน Android ที่ออกแบบมาเพื่อแสดงข้อมูลการออกกำลังกายของ Mi Band ที่มาจากฐานข้อมูล Gadgetbridge แอปนี้มีอินเทอร์เฟซที่ใช้งานง่ายเพื่อดูรูปแบบอัตราการเต้นของหัวใจผ่านแผนภูมิและตารางแบบโต้ตอบ สร้างขึ้นด้วยเครื่องมือพัฒนา Android ที่ทันสมัย

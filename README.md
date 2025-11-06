@@ -7,15 +7,15 @@ This project is part of the study and development of an Android application. The
 
 ## ⭐ Key Features
 
-- **Database Display: Reads and displays device data from the Gadgetbridge database.
+- **Database Display**: Reads and displays device data from the Gadgetbridge database.
 
-- **Interactive Heart Rate Charts: Displays heart rate data over time using zoomable and scrollable line charts.
+- **Interactive Heart Rate Charts**: Displays heart rate data over time using zoomable and scrollable line charts.
 
-- **CSV Data Import: Parses and displays activity data from the sample MI_BAND_ACTIVITY_SAMPLE.csv file.
+- **CSV Data Import**: Parses and displays activity data from the sample MI_BAND_ACTIVITY_SAMPLE.csv file.
 
-- **Data Export: Allows exporting table data in multiple formats, including CSV, XLS, and TXT.
+- **Data Export**: Allows exporting table data in multiple formats, including CSV, XLS, and TXT.
 
-- **Modern UI: Built entirely with Jetpack Compose for a clean, responsive, and modern user interface.
+- **Modern UI**: Built entirely with Jetpack Compose for a clean, responsive, and modern user interface.
 
 - **Info & Credits: A dedicated screen to display data sources and libraries used.
 

@@ -1,39 +1,39 @@
-DataWearAPP - Mi Band Data Viewer
+# DataWearAPP - Mi Band Data Viewer
 An Android application designed to display Mi Band fitness data sourced from the Gadgetbridge database. This app provides an intuitive interface to view heart rate patterns through interactive charts and tables. Built with modern Android development tools.
 
-✨ About The Project
+## ✨ About The Project
 
 This project is part of the study and development of an Android application. The objectives are to learn how to retrieve data from an SQLite database, display data using charts and tables, and build a beautiful UI with Jetpack Compose. I hope this project will be beneficial for those interested in future Android application development.
 
-⭐ Key Features
+## ⭐ Key Features
 
-Database Display: Reads and displays device data from the Gadgetbridge database.
+- **Database Display: Reads and displays device data from the Gadgetbridge database.
 
-Interactive Heart Rate Charts: Displays heart rate data over time using zoomable and scrollable line charts.
+- **Interactive Heart Rate Charts: Displays heart rate data over time using zoomable and scrollable line charts.
 
-CSV Data Import: Parses and displays activity data from the sample MI_BAND_ACTIVITY_SAMPLE.csv file.
+- **CSV Data Import: Parses and displays activity data from the sample MI_BAND_ACTIVITY_SAMPLE.csv file.
 
-Data Export: Allows exporting table data in multiple formats, including CSV, XLS, and TXT.
+- **Data Export: Allows exporting table data in multiple formats, including CSV, XLS, and TXT.
 
-Modern UI: Built entirely with Jetpack Compose for a clean, responsive, and modern user interface.
+- **Modern UI: Built entirely with Jetpack Compose for a clean, responsive, and modern user interface.
 
-Info & Credits: A dedicated screen to display data sources and libraries used.
+- **Info & Credits: A dedicated screen to display data sources and libraries used.
 
-🛠️ Technologies & Libraries Used
+## 🛠️ Technologies & Libraries Used
 
-Kotlin: Primary programming language
+- **Kotlin*: Primary programming language
 
-Jetpack Compose: For building the entire user interface
+- **Jetpack Compose: For building the entire user interface
 
-MPAndroidChart: For creating beautiful and interactive charts
+- **MPAndroidChart: For creating beautiful and interactive charts
 
-Room Persistence Library: For database access (schema definition)
+- **Room Persistence Library: For database access (schema definition)
 
-Material 3: For UI components and theming
+- **Material 3: For UI components and theming
 
-Gradle: For build automation
+- **Gradle: For build automation
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
 
@@ -64,7 +64,7 @@ Select an Emulator or connect a physical device.
 
 Click the Run 'app' (▶️) button in the toolbar.
 
-📊 Data Sources
+## 📊 Data Sources
 
 The application is designed to work with a Gadgetbridge.db file.
 
@@ -72,7 +72,7 @@ A sample database is included in app/src/main/assets/Gadgetbridge.db.
 
 Additionally, a sample CSV file is included in app/src/main/assets/MI_BAND_ACTIVITY_SAMPLE.csv for demonstration purposes.
 
-📦 Building the APK
+## 📦 Building the APK
 
 You can build a release APK directly from the command line using the Gradle wrapper.
 
@@ -92,7 +92,7 @@ Bash
 ./gradlew assembleRelease
 The unsigned APK will be located in app/build/outputs/apk/release/.
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 
 Thank you to the Gadgetbridge team for their open-source project.
 

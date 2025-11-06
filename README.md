@@ -97,6 +97,7 @@ The unsigned APK will be located in app/build/outputs/apk/release/.
 Thank you to the Gadgetbridge team for their open-source project.
 
 This project uses the powerful MPAndroidChart library by PhilJay.
+
 ==========================================================================================================================================================================================
 
 # DataWearAPP - ตัวแสดงข้อมูล Mi Band

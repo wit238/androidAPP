@@ -37,66 +37,65 @@ This project is part of the study and development of an Android application. The
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
 
-Prerequisites
+### Prerequisites
 
-Android Studio (Latest stable version recommended)
+- Android Studio (Latest stable version recommended)
 
-Android SDK
+- Android SDK
 
-Installation
+### Installation
 
-Clone the repository:
+1. **Clone the repository:**
+```sh
+ git clone https://github.com/wit238/androidAPP.git
+```
 
-Bash
+2. **Open Android Studio:**
 
-git clone https://github.com/wit238/androidAPP.git
-Open in Android Studio:
+-Select File > Open and navigate to the cloned repository directory.
 
-Open Android Studio
+-Let Android Studio sync the project with Gradle.
 
-Select File > Open and navigate to the cloned repository directory.
+3. **Run the application:**
 
-Let Android Studio sync the project with Gradle.
+-Select an Emulator or connect a physical device.
 
-Run the application:
-
-Select an Emulator or connect a physical device.
-
-Click the Run 'app' (▶️) button in the toolbar.
+-Click the Run 'app' (▶️) button in the toolbar.
 
 ## 📊 Data Sources
 
 The application is designed to work with a Gadgetbridge.db file.
 
-A sample database is included in app/src/main/assets/Gadgetbridge.db.
+- A sample database is included in app/src/main/assets/Gadgetbridge.db.
 
-Additionally, a sample CSV file is included in app/src/main/assets/MI_BAND_ACTIVITY_SAMPLE.csv for demonstration purposes.
+- Additionally, a sample CSV file is included in app/src/main/assets/MI_BAND_ACTIVITY_SAMPLE.csv for demonstration purposes.
 
 ## 📦 Building the APK
 
 You can build a release APK directly from the command line using the Gradle wrapper.
 
-Navigate to the project's root directory.
+1. Navigate to the project's root directory.
 
-Run the following command:
+2. Run the following command:
 
-On Windows:
+-On Windows:
+ ```sh
+ gradlew.bat assembleRelease
+  ```
 
-Bash
-
-gradlew.bat assembleRelease
-On macOS/Linux:
-
-Bash
+- On macOS/Linux:
+```sh
+./gradlew assembleRelease
+ ```
 
 ./gradlew assembleRelease
 The unsigned APK will be located in app/build/outputs/apk/release/.
 
 ## 🙏 Acknowledgements
 
-Thank you to the Gadgetbridge team for their open-source project.
+- Thank you to the Gadgetbridge team for their open-source project.
 
-This project uses the powerful MPAndroidChart library by PhilJay.
+- This project uses the powerful MPAndroidChart library by PhilJay.
 
 ========================================================================================================================================================================================
 

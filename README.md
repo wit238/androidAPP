@@ -17,21 +17,21 @@ This project is part of the study and development of an Android application. The
 
 - **Modern UI**: Built entirely with Jetpack Compose for a clean, responsive, and modern user interface.
 
-- **Info & Credits: A dedicated screen to display data sources and libraries used.
+- **Info & Credits**: A dedicated screen to display data sources and libraries used.
 
 ## 🛠️ Technologies & Libraries Used
 
-- **Kotlin*: Primary programming language
+- **Kotlin**: Primary programming language
 
-- **Jetpack Compose: For building the entire user interface
+- **Jetpack Compose**: For building the entire user interface
 
-- **MPAndroidChart: For creating beautiful and interactive charts
+- **MPAndroidChart**: For creating beautiful and interactive charts
 
-- **Room Persistence Library: For database access (schema definition)
+- **Room Persistence Library**: For database access (schema definition)
 
-- **Material 3: For UI components and theming
+- **Material 3**: For UI components and theming
 
-- **Gradle: For build automation
+- **Gradle**: For build automation
 
 ## 🚀 Getting Started
 
